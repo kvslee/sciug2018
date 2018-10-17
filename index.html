@@ -174,7 +174,7 @@
 					<ol>
 						<li>Plotly (Online & Offline)</li>
 						<li>Sierra SQL API</li>
-						<li>Some Examples (Sierra & Plotly)</li>
+						<li>Examples (Sierra & Plotly)</li>
 					</ol>
 					<aside class="notes">Now let's move on to the real part of presentation. First of all, 
 						I will give you an idea on what I am going to cover. Here is the list. First, 
@@ -420,39 +420,30 @@
 					</aside>					
 				</section>
 				<section>
-					<section>
-						<h3>Embed Sierra Charts</h3>
-						<p><span class="fragment highlight-green" data-fragment-index="1">Can we embed multiple charts in one HTML page?</span></p>
-						<ul>
-							<li>Use the same SQL output from circ_trans</li>
-							<li>Run data transformations on each column</li>
-							<li>Pltoly option: output_type='div'</li>
-							<li>Pass the chart outputs to the template engine</li>
-							<li>Prepare a template html that presents multiple charts</li>
-						</ul>
-						<aside class="notes">
-							Can we present multiple charts in a html document? Yes, we can. 
-							We can store charts in div and pass the charts into a template using Jinja2 template engine. 
-							<br><br>
-							For this time, because we need multiple charts, we have to run data transformation
-							on each column (patron_home_library, ptype_code, time, op_code, itype_code, item_location). 
-							We will feed the transformed data of each column to Plotly. 
-							Then, plotly output charts into divs.
-							The chart outputs will be passed to the template engine and
-							the multuple charts will be displayed as instructed in a template html file.
-							<br><br>
-							Now let's run sierra_chart_embed.py. (the code "sierra_chart_embed.py)
-						</aside>
-					</section>	
-					<section>
-						<h3>Plotly Offline (3)</h3>
-						<img src="images/offline_template.png">
-						<aside class="notes">The plotly app output multiple charts as div, which will be passed 
-							to the template engine, Jinja2. The engine uses a template file and embed the charts 
-							as specified in the template HTML.  
-							</aside>					
-					</section>											
-				</section>
+					<h3>Embed Sierra Charts</h3>
+					<p><span class="fragment highlight-green" data-fragment-index="1">Can we embed multiple charts in one HTML page?</span></p>
+					<ul>
+						<li>Use the same SQL output from circ_trans</li>
+						<li>Run data transformations on each column</li>
+						<li>Pltoly option: output_type='div'</li>
+						<li>Pass the chart outputs to the template engine</li>
+						<li>Prepare a template html that presents multiple charts</li>
+					</ul>
+					<aside class="notes">
+						Can we present multiple charts in a html document? Yes, we can. 
+						We can store charts in div and pass the charts into a template using Jinja2 template engine. 
+						<br><br>
+						For this time, because we need multiple charts, we have to run data transformation
+						on each column (patron_home_library, ptype_code, time, op_code, itype_code, item_location). 
+						We will feed the transformed data of each column to Plotly. 
+						Then, plotly output charts into divs.
+						The chart outputs will be passed to the template engine and
+						the multuple charts will be displayed as instructed in a template html file.
+						<br><br>
+						Now let's run sierra_chart_embed.py. (the code "sierra_chart_embed.py)
+					</aside>
+				</section>	
+										
 				<section>
 					<h3>Interactive Program</h3>
 					<p><span class="fragment highlight-green" data-fragment-index="1">Can we input specific options?</span></p>
@@ -496,71 +487,33 @@
 					</ul>
 				</section>
 				<section>
-					<h3>Library Data Analytics</h3>
+					<h3>More Ideas...</h3>
 					<ul>
-						<li>Possible to create many analytics tools</li>
-						<li>Re-run or auto-run</li>
-						<li>Communicate on a Jupyter</li>
-						<li>Examples:
-							<ul>
-								<li>Expired Patrons with Checkouts</li>
-								<li>InterLibrary Loan Map:
-									<ul>	
-										<li>ILL lendings in the last 100 days</li>
-										<li>ILL partners</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
+						<li>Create the reports of special purposes</li>
+						<li>Automatically run and deliver the report (scheduler, clone)</li>
+						<li>Explore more data from Sierra (collections, circulation,, acquisition)</li>
+						<li>Collect non-Sierra data (counter, space usages, research/reference)</li>
+						<li>Data from other APIs (Googlesheet, LibGuides)</li>
+						<li>Plotly's different charts (map, bubble, heatmap) </li>
 					</ul>
-					<aside class="notes">Using the techniques shown previously, we can create many analytics tools. 
-						Once we crated the tools, we can re-run or auto-run them conveniently. On Jupyter, we can share 
-						data and communicate we find. 
-						<br><br>
-						I will share two examples of analytics tools. (Slide)
-						<br><br>
-						(Show the code, jupyter/sierra_tools.ipynb)
-						</aside>	
-				</section>
-				<section>
-					<h3>Thoughts</h3>
-					<ul>
-						<li>More data from Sierra:
-							<ul>
-								<li>WebPac usages (search, download)</li>
-							</ul>
-						</li>
-						<li>Non-Sierra data: 
-							<ul>
-								<li>EzProxy</li>
-								<li>LibGuides</li>
-								<li>Library building usage (gate counter)</li>
-								<li>Digital repository system</li>
-								<li>And so on...</li>
-							</ul>
-						</li>
-					</ul>
-					<aside class="notes">Everywhere people talks about data today. We librarian should ask where 
-						our data is located? (for example, Slide) We can ask, "can we harvest the data?" We can ask, 
-						"Is it useful or not?" The rest of story is your imgination. 
+					<aside class="notes">Data is everywhere. We can ask,"Where 
+						our data is located? "What can I do with it?" "How should I present it?"  
 					</aside>					
 				</section>
 				<section>
 					<h2>What is the next?</h2>
 					<h3>[ Library Data Group ]</h3>
 					<h3>Seong Heon Lee, selee@chapman.edu</h3>
-					<aside class="notes">Finishing the presentation slide last Friday, I asked myself, "what is the next?"
-						I can finish this presentation with the capital "THE END". But something was going on in my mind.
-						So, I announce today that I will create "Library Data Group". This group will explore various 
-						possibilities of using library data and of creating analytics tool. So, if you are interested in, 
-						please send me an email. I think we can grow teaching and learning each other.  
+					<aside class="notes">"what is the next?" We may create "Library Data Group". This group will explore various 
+						ways of using library data and create analytic tools. So, if you are interested in, 
+						please send me an email. I think we can grow learning each other.  
 					</aside>	
 				</section>
 				
 				<section data-transition="slide" data-background="#ff9999" data-background-transition="zoom">
-					<h1>Thanks</h1>
-					<aside class="notes">My 10 year old daughter said that the last THANKS slide is the most important. 
-						So, she said that it must be pretty. Here we have. THANKS.
+					<h1>THANK YOU.</h1>
+					<aside class="notes">My daughter said that the last slide is very important. It must be pretty and meaningful. 
+						Here we go. THANK YOU.
 					</aside>	
 				</section>
 			</div>

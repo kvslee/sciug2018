@@ -11,14 +11,14 @@ from plotly.graph_objs import Bar, Pie, Scatter, Layout
 bar_chart = plotly.offline.plot({
     "data": [Bar(x=["Leatherby", "Law", "Science", "Music", "Brandman"], y=[543, 365, 92, 61, 77])],
     "layout": Layout(title="Checkouts by Libraries")
-}, output_type='div')
+}, output_type='div', include_plotlyjs=False)
 
 
 # Pie Chart
 pie_chart = plotly.offline.plot({
     "data": [Pie(labels=["Leatherby", "Law", "Science", "Music", "Brandman"], values=[543, 365, 92, 61, 77])],
     "layout": Layout(title="Checkouts by Libraries")
-}, output_type='div')
+}, output_type='div', include_plotlyjs=False)
 
 # print(bar_chart)
 

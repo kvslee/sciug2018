@@ -79,32 +79,32 @@ print("time_data", time_data)
 home_libraries_chart = plotly.offline.plot({
                         "data": [Bar(x=home_libraries[0], y=home_libraries[1])],
                         "layout": Layout(title="Home Libraries")
-                    }, output_type='div')
+                    }, output_type='div', include_plotlyjs=False)
 
 trans_types_chart = plotly.offline.plot({
                         "data": [Pie(labels=trans_types[0], values=trans_types[1])],
                         "layout": Layout(title="Transaction Types")
-                    }, output_type='div')   
+                    }, output_type='div', include_plotlyjs=False)   
 
 ptypes_chart = plotly.offline.plot({
                         "data": [Bar(x=ptype[0], y=ptype[1])],
                         "layout": Layout(title="Patron Types", xaxis=dict(type='category'))
-                    }, output_type='div')                    
+                    }, output_type='div', include_plotlyjs=False)                    
 
 item_locations_chart = plotly.offline.plot({
                         "data": [Bar(x=item_location[0], y=item_location[1])],
                         "layout": Layout(title="Item Locations")
-                    }, output_type='div') 
+                    }, output_type='div', include_plotlyjs=False) 
 
 itypes_chart = plotly.offline.plot({
                         "data": [Bar(x=itype[0], y=itype[1])],
                         "layout": Layout(title="Item Types", xaxis=dict(type='category'))
-                    }, output_type='div') 
+                    }, output_type='div', include_plotlyjs=False) 
 
 time_chart = plotly.offline.plot({
                         "data": [Scatter(x=time_data[0], y=time_data[1])],
                         "layout": Layout(title="Times")
-                    }, output_type='div')
+                    }, output_type='div', include_plotlyjs=False)
 
 #################################################
 #########  Embed div charts inside a html  ###### 
