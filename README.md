@@ -1,4 +1,4 @@
-# 2017 SCIUG Conference  
-### Sierra API & Visualized Data Analysis
-### Chapman University, October 10.
+# 2018 SCIUG Conference  
+### VISUALIZING DATA: SIERRA SQL API AND PLOTLY
+### Chapman University, October 23.
 
