@@ -1,5 +1,2 @@
 {
-// Git Bash
-"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-"git.path": "C:\\Program Files\\Git\\mingw64\\bin\\git.exe"
 }
