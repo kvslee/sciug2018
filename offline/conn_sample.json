@@ -1,0 +1,3 @@
+{
+    "sierra": "host=100.200.300.400 dbname=iii port=1032, user=yourusername password=yourpassword"
+}
