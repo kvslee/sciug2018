@@ -39,7 +39,7 @@
 				    </aside>					
 				</section>
 				<section>
-					<h3>Suggested topics</h3>
+					<h3>Suggested Proposal Topics</h3>
 					<ul class="narrow">
 						<li>III Customer Support / new functionality</li>
 						<li>Weeding</li>
@@ -62,7 +62,7 @@
 						When SCIUG requsted presentation proposals with a list of interests. 
 						(CLICK)
 						I find that there are some interests in SQL report-writing, Sierra APIs, and Stats and other ways of reporting.
-						I thought that I can merge those interests in one session  
+						I think that I can cover those interests in one presentation.  
 					</aside>
 					<br>
 				</section>
@@ -70,11 +70,11 @@
 					<h3>Final Product Preview</h3>
 					<a href="circulation_report.html" target="_blank" >Circulation Transaction Report</a>
 					<aside class="notes">
-						Why don't we start with previewing an outcome that you are expected to build yourself after this presentation.
-						This will give us a chance to understand our goal of this presentation. 
+						Why don't we start with looking at an outcome that you are expected to build after this presentation.
+						This will give us an idea to understand our goal of the presentation. 
 						<br><br>
-						I will show a circulation transaction report using Sierra SQL API and Plotly. The basic idea is to extract data 
-						from Sierra's PostgreSql database and create a visualized report using a Plotly visualization tool. 
+						I will show a circulation transaction report using Sierra SQL API and Plotly. The basic process is 
+						to extract data from Sierra's PostgreSql database and to create a report using Plotly visualization tool. 
 						<br><br>
 						Let's take a look at a sample outcome.
 					</aside>
@@ -89,20 +89,20 @@
 						<li>Decision Center</li>
 					</ul>
 					<aside class="notes">
-						My first question is why we do need a custom report program. As you know, Sierra provides 
-						with a build-in report prgoram, called Web Management Reports. How many of you are using WMR? 
+						My first question is this. Why do we need a custom report program? (CLICK) As you know, Sierra provides 
+						with a build-in report prgoram, called Web Management Reports (WMR). How many of you are using WMR? 
 						What is your user exprience? Personally, I do not have many words to say about it, 
 						because I have not used it much. Preparing this presentation, I revisited the report program to make 
 						a quick evaluation. My first impression is that it has not been improved for a long time. 
 						UI is old and not intuitive. 
 						<br><br>
 						I know that Innovative has a new data analytic product, Decision Center. Again, I have no word to say about Decision Center, 
-						because I have no exprience of the product. But I am sure how many libraries are affordable to purchase 
+						because I have no exprience of the product. But I am not sure how many libraries are affordable to purchase 
 						the product, particularly a library running a small or medium size of colletion.
-						Would it be valuable enought for the money we invest?
+						Would it be valuable enough for the money we invest? The answer may be "yes" for some libraries, or 'not' for others.
 						<br><br>
 						I think that Sierra APIs (SQL Direct, REST) are great tools to leverage the gap. A custom report program, which
-						can use the APS, might not solve all things. However, it can be sufficient to take care of our business.
+						is built with the APIs, can provide a good solution for data analytics.
 					</aside>
 				</section>
 				<section>
@@ -120,16 +120,15 @@
 							</ul>
 					</ul>
 					<aside class="notes">
-						Particularly, for today's example, we start with questioning who uses what? Haven't you ever been 
-						curious about how different libraries use Sierra resources? Chapman	University have three branches
-						in Sierra, Leatherby, Law Library, Brandman. 
-						Our library director, in one day, threw a question. Leatherby and Law Library equally 
-						share the cost of Sierra. Because the size of collections and users, the main library Leatherby
-						should use more resources than Law Library does. That was a legitimate assumption. 
-						Can we prove that assumption with factual data. 
+						Particularly, for the shown example, I started with questioning who uses what? (CLICK)
+						Chapman	University have three branches in Sierra, Leatherby, Law Library, Brandman.
+						Haven't you ever been curious about how different libraries use library resources?  
+						Our library director was curious about how Leatherby (the main library) and Law Library utilize resources. 
+						Because the size of collections and users, Leatherby should use more resources than Law Library does. 
+						That is a reasonable assumption. Can we prove that assumption with factual data. 
 						<br><br>
-						This is one example of how data analysis can be useful. However, our interests can stretch 
-						beyond this. We may want to compare library resource usages not only by libraries but also 
+						This is one example of how data analytics can be useful. Going further, we can compare 
+						library resource usage not only by libraries but also 
 						by locations, patron types,	item types, transaction times, etc.
 					</aside>
 					<br>
@@ -139,34 +138,32 @@
 					<p><span class="fragment highlight-green" data-fragment-index="1">Why not?</span></p>
 					<ul>
 						<li>Plenty of data visualization tools (Open Source)</li>
-						<li>Sirera offers APIs (Direct SQL & REST API)</li>
+						<li>Open Library Stacks (Direct SQL & REST API)</li>
 						<li>Customize a data report as you wish</li>
 					</ul>				
-					<aside class="notes">One of the best way to answer the question "Why?" is to ask "Why Not?"
-						There are many data visualization tools available. Many of them are open source.
-						For example, D3 javasript library is very popular. You may heard of many buzz words like big data, 
-						AI, machine learning, etc. Our generation trys to understand large amount of data that is being produced 
-						every single second thought various online services. Although libraries do not handle extremly large data as big
-						companies do, we, librarians, have also genuine interest in user behaviors and interactions. 
+					<aside class="notes">One of the best way to answer a question "Why?" is to ask "Why Not?" (CLICK)
+						There are many data visualization tools available. Many of them are open sources.
+						We are evolving into a data-driven society. We hear so many buzz words like big data, 
+						AI, machine learning, data analytics, data visualization, etc. 
+						With such a high demand and interest of data, there will be more tools being developed.
 						<br><br>
-						Thankfully, Innovative has advocated Open Library Stacks (OLS) architecture. With the merger of Polaris 
-						and VTLS, OLS idea becomes more important. The main idea is to creat a hightly scalable cloud platform
-						to make their different products communicate each other. For this goal, APIs are critically important,
-						because APIs open data to other products, which can be Innovative's another product, or third companies',
-						or your local program. In 2018, it is not an exaggeration to say that the success of a product can depend 
-						on how useful APIs a vendor provide with that product? APIs give a vendor a chance to expand their ecosystem,
-						with outreaching more developers and users.  
-						This is why Google, Facebook, Twitter, and other online services, provide their APIs. 
+						Innovative advocates Open Library Stacks (OLS) architecture. With the merger of Polaris 
+						and VTLS, OLS idea becomes more important. The main idea is to creat a highly scalable cloud platform
+						to make their different products communicating each other. For this goal, APIs are critically important,
+						because APIs make different products share and exchange data. Successful vendors implement APIs 
+						to create the ecosystem that their products lead in competative market. 
+						They outreach more developers and users.
 						<br><br>
-						We, humans, are creative beings. We want to make reports in the format that we want. Not only data content, 
-						but also data presentaiton matters. I know that you all have expriences in tweaking an excel file to create 
-						a good report. We can do the same with the APIs.   
+						We are creative beings. We like to customize reports as we wish. Data matters. But 
+						data presentaiton also matters. We all have expriences in tweaking an excel file to create 
+						a nice report. We can do the same with using APIs and visualization tools.   
 					</aside>
 					<br>
 				</section>
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+				<section data-transition="slide" da ta-background="#4d7e65" data-background-transition="zoom">
 					<h1>Exploring data <br>is<br> fun!</h1>
-					<aside class="notes">Best motivation of all things: FUN! We are curious beings.
+					<aside class="notes">The best motivation of all things: FUN! Fun comes from curiosity 
+						and the discovery of things.  
 					</aside>					
 				</section>				
 				<section>
@@ -175,13 +172,14 @@
 						<li>Plotly (Online & Offline)</li>
 						<li>Sierra SQL API</li>
 						<li>Examples (Sierra & Plotly)</li>
+						<li>Web App (Sierra & Plotly)</li>
 					</ol>
-					<aside class="notes">Now let's move on to the real part of presentation. First of all, 
-						I will give you an idea on what I am going to cover. Here is the list. First, 
-						I will start with Plotly library. I will demo how to create a chart online and offline.
-						Next, I will go through how to connect Sierra SQL API and get data from Sierra Database.
-						After that, I will combine the knowledge of both Plotly and Sierra SQL API. I will create 
-						some example reports with Sierra data and Plotly charts. 
+					<aside class="notes">Now let's move on to the real part of presentation. 
+						Here is the list of items that I will cover today. First, 
+						We will start with Plotly library. We will learn how to create a chart online and offline.
+						Next, we will go through how to connect Sierra SQL API and get data from Sierra Database.
+						After that, combining the knowledge of both Plotly and Sierra SQL API, we will create 
+						actual reports with Sierra and Plotly. Finally, I will show a sample web app. 
 					</aside>
 					<br>
 				</section>					
@@ -198,6 +196,7 @@
 					</ul>
 					<aside class="notes">
 						How many people have used Plotly? How many people have heard about Plotly? 
+						[Read Slide]
 					</aside>
 					<br>
 				</section>
@@ -223,6 +222,7 @@
 					B: 530, 280, 74, 50, 38 	<br>
 					Bar, Pie, Scatter <br><br>
 					As we saw, it is very easy to create a chart. 
+					[Read Slide] 
 					</aside>
 				</section>															
 				<section>
@@ -245,7 +245,8 @@
 						<br><br>
 					Python Library pages show examples and documentation (Full Reference). 
 					<br><br>
-					Before creating an offfline chart, Let's learn how to setup offline plotting.
+					Before creating an offfline chart, Let's see  how to setup offline plotting.
+					[Code - first.py]
 
 						</aside>					
 				</section>
@@ -254,24 +255,25 @@
 					<p><span class="fragment highlight-green" data-fragment-index="1">How to embed charts in a html?</span></p>
 					<ul>
 						<li>Follow the same rules</li>
-						<li>Use div instead of filename for output_type</li>
-						<li>Store a chart into a variable</li>
+						<li>Use div for output_type, instead of filename </li>
+						<li>Hole a chart in a variable</li>
 						<li>Pass the variable to a template (Jinja2 engine)
-						<li>Should have a template html</li>
+						<li>A template file will receive multiple chart variables</li>
 					</ul>
-					<aside class="notes">In most cases, we may need embeded charts. With simply changing an option of
-						output type to div, we can create a embedded chart.<br><br>
-						Why do we need a template engine and a template file. Plotly programatically outputs a chart 
-						in HTML div element. We need to pass this 'div' output into a template file, which will generate
-						the final form of a html file. This is useful because you can include multiple charts in one document.
+					<aside class="notes">In most cases, we may need embeded charts. This is how we do it.
+						<br><br>
+						[Read Slide]
+						[Code - embed.py]
 						 </aside>					
 				</section>				
 				<section>
 					<h3>Plotly Offline (3)</h3>
 					<img src="images/offline_template.png">
-					<aside class="notes">The plotly app output charts (bar_chart, pie_chart) as div, which will be feeded 
-						into the template engine, Jinja2. The engine chooses a specified template file and embed the charts 
-						in HTML format.  
+					<aside class="notes">Plotly outputs a chart (bar_chart, pie_chart) as div. 
+						We hold the charts in variables, which will be feeded 
+						into the template engine, Jinja2. The engine plug the template variable into
+						a designated template file. Finally, the engine outputs 
+						the charts in HTML as specified in the template file.  
 						 </aside>					
 				</section>	
 				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
@@ -289,6 +291,8 @@
 						</ul>
 					</ul>
 					<aside class="notes">Now, we covered most basics of Plotly Online and Offline.
+						<br><br>[Read Slide]
+						<br>
 						Now we have enough foundation to build charts with real data.   
 						Let's move to the next topic, Sierra database. 
 					</aside>					
@@ -308,26 +312,27 @@
 						</li>
 						<li>By default, 5 concurrent connections per user</li>
 					</ul>
-					<aside class="notes">(Slide)
+					<aside class="notes">[Read Slide] 
 					</aside>					
 				</section>
 				<section>
 					<h3>PGAdmin, Destkop SQL Client</h3>
 					<ul>
-						<li>Version 3 or 4</li>
+						<li>Version 4</li>
 						<li><span class="fragment highlight-green" data-fragment-index="1">Connect</span> to database</li>
 						<li>Run SQL <span class="fragment highlight-green" data-fragment-index="2">queries</span></li>
 						<li>Show <span class="fragment highlight-green" data-fragment-index="3">results</span> in tables</li>
 						<li><span class="fragment highlight-green" data-fragment-index="4">Creating/testing</span> SQL queries</li>
 					</ul>
 					<aside class="notes">The easiest way to work with Sierra database is using SQL Client. PostgreSQL has
-						its own SQL client, called PGAdmin. You can download it with PostgeSQl database on your local PC.(Slide)
+						its own SQL client, called PGAdmin. You can download it with PostgeSQL database on your local PC.
+						[Read Slide]
 					</aside>	
 				</section>	
 				<section>
 					<h3>Setup PGAdmin</h3>
 					<img src="images/pgadmin_setup.png">
-					<aside class="notes">Setting PGAdmin is straightforward. (Slide)
+					<aside class="notes">Setting PGAdmin is straightforward. [Explain Slide]
 					</aside>	
 				</section>									
 				<section>
@@ -341,15 +346,19 @@
 						<li>Example: Transactions > Circulation > checkout</li>
 					</ul>
 					<aside class="notes">
-						Once you connect to Sierra Database, you should learn database structure.
+						I just explained how to connect to Sierra Database. Now we need to learn database structure.
 						<br><br>
-						PGAdmin displays all viewable tables (349 tables under sierra_view schema).
-						To understand Sierra database, you need to spend some times. You may browse through all tables in PGAdmin. 
-						However, often times, some tables or fields are not obvious to understand. Then, you can go to 
-						SierraDNA, which is the msot valuable resource to learn Sierra database. It includes detailed descriptions
-						on tables and fields. To find a table, you can follow category or use the search box on the top right. 
+						PGAdmin displays all 349 viewable tables (under sierra_view schema). To get familiar,
+						you need to spend some times. You may browse through all tables in PGAdmin. 
+						However, often times, some tables or fields are not obvious to understand.
+						<br><br>Then, you can go to 
+						SierraDNA, which is the msot valuable resource to learn Sierra database. 
+						[Show SierraDNA]
+						<br><br>
+						It includes detailed descriptions on tables and fields. 
+						To find a table, you can follow category or use the search box on the top right. 
 						SierraDNA shows not only detailed table view but also Entity Relationship
-						Diagram. ERD is useful sometimes to create a join queries because it visualizes relationships among tables.   
+						Diagram. ERD is useful to create a join querr because it visualizes relationships among tables.   
 					</aside>					
 				</section>
 				<section>
@@ -362,50 +371,51 @@
 					WHERE NOW() - c.checkout_gmt <= interval '3 hours'
 					AND pv.home_library_code = 'lhome'
 					</code></pre>
-					<aside class="notes">Now let me show your a real query in PGADMIN. 
+					<aside class="notes">Now let me show you a real query in PGADMIN. 
 						<br><br>
 						First, open PGADMIN. Once we are connected to Sierra database, 
 						you will see all tables and fields. 
-						<br><br>To make a quesry, we click SQL button. We see query pane and result pane. 
+						<br><br>To make a query, we click SQL button. We see query pane and result pane. 
+						Let's copy and paste the left SQL query and run it. 
 					</aside>					
 				</section>
 				<section>
 					<h3>Plotly & Sierra</h3>
 					<p><span class="fragment highlight-green" data-fragment-index="1">Transactions by Patron Home Library</span></p>
 					<ul>
-						<li>Reuse an offline script shown before.</li>
-						<li>Use Sierra data, not a dummy one.</li>
-						<li>Three Steps:
+						<li>Reuse an offline script</li>
+						<li>Use Sierra data, not a dummy one</li>
+						<li>New things:
 							<ul>
-								<li>get Sierra data (connection and query)</li>
-								<li>transform Sierra data to plotly data</li>
-								<li>generate a Plotly chart</li>
+								<li>Connection & query: psycopg2</li>
+								<li>Transform Sierra data to plotly data</li>
 							</ul>
 						</li>
 					</ul>
-					<aside class="notes">So far, we have learned how to use Plotly and how to query Sierra data.
-						Now is time to put them together. We will create Plotly charts that visualize transactions 
-						by Patron Home Library for the last 10 days.
+					<aside class="notes">So far, we have learned how to create a chart with Plotly and how to query Sierra data.
+						Now is a time to put them together. We will create Plotly charts that visualize transactions 
+						by Patron Home Library for the last 10 days. [CLICK]
 						<br><br>
-						We will reuse the same offline script shown before in Plotly demo, 
-						because visualization logic is the same. However, this time, we will use actual Sierra 
-						data, instead of our dummy data. 
+						We will reuse the same offline script that was used before in Plotly demo, 
+						because visualization logic is the same. However, in this time, we will use actual Sierra 
+						data, instead of dummy data. 
 						<br><br>
-						To get data, we need to connect and run a query on Sierra database. I showed a demo how to do this in PGAdmin.
-						Now, how do we do that in a Python program?
-						We will use a PostgreSQL database adapter, called psycopg2. With the psycopg2,
-						You can connect the Sierra database and run a query.  
+						There are some new processes involved. To get data, we need to connect and run a query on Sierra database. 
+						I showed a demo how to do this in PGAdmin. Now, how do we do that in a Python program?
+						We will use a PostgreSQL database adapter, called psycopg2. With psycopg2,
+						we can connect Sierra database and run a query in Python program.  
 						<br><br>
-						First, let's create charts and then explain. 						
-						Look at the code. (the code "sierra_chart.py) The Plotly setup is exactly the same. 
-						We only changed the data part (x axis and y axis)
-						with the data that we get from Sirrra and transformed.     
+						Afte we receive data from Sirera, we need to manipuate the data into a right format that Plotly requires. 
+						<br><br>
+						[code sierra_chart.py] 
+						[Explain the code and run]
+   
 					</aside>					
 				</section>
 				<section>
-					<h3>SQL Output</h3>
+					<h3>Sierra SQL Output</h3>
 					<img src="images/sql_output.png">
-					<aside class="notes"> You may feel a little puzzled on the transformation part. 
+					<aside class="notes"> You may feel a little puzzled on the data transformation part. 
 						Why do we need to transform Sierra data before using it for Plotly? <br>
 						That is because Plotly needs X and Y axes data in specific structure.  
 					</aside>					
@@ -413,10 +423,11 @@
 				<section>
 					<h3>Plotly X Y Axes</h3>
 					<img src="images/transform_data.png">
-					<aside class="notes">I have chart_data function that takes care of this business. The function reads through 
-						each row of the patron_home_library_code column and count the transaction by the patron_home_library_code. 
-						Finally, the function retuns a list that is right to feed into Plotly chart.  
- 
+					<aside class="notes">I have chart_data function that takes care of this business. 
+						The function reads through each row of the patron_home_library_code column 
+						and count record by patron_home_library. 
+						<br><br>Finally, we see that data is arranged for Plotly x and y axes. 
+						It is in two-demensional list format.
 					</aside>					
 				</section>
 				<section>
@@ -426,27 +437,30 @@
 						<li>Use the same SQL output from circ_trans</li>
 						<li>Run data transformations on each column</li>
 						<li>Pltoly option: output_type='div'</li>
-						<li>Pass the chart outputs to the template engine</li>
-						<li>Prepare a template html that presents multiple charts</li>
+						<li>Pass chart outputs to the template engine</li>
+						<li>Multiple charts will be embedded as instructed in a template file</li>
 					</ul>
 					<aside class="notes">
-						Can we present multiple charts in a html document? Yes, we can. 
+						Can we present multiple charts in one html document? [CLICK] Yes, we can. 
 						We can store charts in div and pass the charts into a template using Jinja2 template engine. 
 						<br><br>
-						For this time, because we need multiple charts, we have to run data transformation
-						on each column (patron_home_library, ptype_code, time, op_code, itype_code, item_location). 
+						For this time, we will use the same Sierra data that we used in the previous example. 
+						Because we create multiple charts, we will transform data
+						for each column (patron_home_library, ptype_code, time, op_code, itype_code, item_location). 
+						<br><br>
 						We will feed the transformed data of each column to Plotly. 
 						Then, plotly output charts into divs.
-						The chart outputs will be passed to the template engine and
-						the multuple charts will be displayed as instructed in a template html file.
+						The chart outputs will be passed to the template engine and then
+						the multuple charts will be displayed in HTML as instructed in a template file.
 						<br><br>
-						Now let's run sierra_chart_embed.py. (the code "sierra_chart_embed.py)
+						[Code - sierra_chart_embed.py]<br>
+						[Explain the code and run]
 					</aside>
 				</section>	
 										
 				<section>
 					<h3>Interactive Program</h3>
-					<p><span class="fragment highlight-green" data-fragment-index="1">Can we input specific options?</span></p>
+					<p><span class="fragment highlight-green" data-fragment-index="1">Can we specify days and transaction types?</span></p>
 					<ul>
 						<li>Python <span style="color:#ff9999">sys.argv</span> - read user inputs from terminal</li>
 						<li>User Inputs:
@@ -458,53 +472,56 @@
 						</li>
 					</ul>
 					<pre><code class="hljs" data-trim contenteditable>python sierra_chart_embed.py 60 oi sierra_interactive.html</code></pre>
-					<aside class="notes">Now, our program can create a ciculation transaction report with multiple charts. Currently,
-						our SQL query find four types transactions (i, o, f, r) in the last 10 days. What about if you want to find 
-						only checkout and checkin in the last 5 days? Of course, you can change the sql query accordingly. However, 
-						it is not a good idea to modify a sql query inside the program every time when we need a different serach.
+					<aside class="notes">Our program created a transaction report with multiple charts. The SQL query retrieved
+						data of four types transactions (i, o, f, r) and in the last 10 days. What about if you want to find 
+						only checkout (o) and checkin (i) and in the last 5 days? [CLICK] Of course, you can change the sql query accordingly. 
+						However, it is not a good idea to modify a sql query inside the program whenever we need a different serach.
 						<br><br>
-						We have a better way. Psycopg2 (PostgreSQL database adapter) can pass variables to SQL queries. 
-						We will get a user input as variables using Python sys.argv. And we will pass them to a sql query 
-						using psycopg adapter. In this way, we can create an interactive program. 
+						We have a better way. Psycopg2 (PostgreSQL database adapter) can dynamically pass user inputs to a SQL query. 
+						We will get user inputs using Python sys.argv in terminal. And we will pass them to a sql query 
+						using psycopg2. In this way, we can create an interactive program. 
 						<br><br>
 						I am going to demonstrate how it runs. I have three user inputs	(days, transaction types, output filename).
 						<br><br>
 						(In teminal, run it interactively).
-						<br><br>
-						I will not go deeper on this subject. But this technique will be used in the next section, Jupyter.
 						</aside>					
 				</section>
 				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<h3>Sierra SQL API & Plotly: Summary</h3>
 					<ul>
-						<li>Plotly's Python offline with Sierra data</li>
-						<li>Template engine Jinga2 to embed multiple charts</li>
+						<li>Plotly Python Offline</li>
 						<li>SierraDNA to learn Sierra database</li>
 						<li>PGAdmin to run test queries</li>
 						<li>Python database adapter (psycopg2)</li>
 						<li>Transform data for Plotly</li>
-						<li>Interactive program for flexible user input</li>
+						<li>Template engine Jinga2 to embed multiple charts</li>
+						<li>Interactive program with user inputs</li>
 					</ul>
+					<aside class="notes">
+						[Read Slide] 
+					</aside>
 				</section>
 				<section>
 					<h3>More Ideas...</h3>
 					<ul>
 						<li>Create the reports of special purposes</li>
-						<li>Automatically run and deliver the report (scheduler, clone)</li>
-						<li>Explore more data from Sierra (collections, circulation,, acquisition)</li>
+						<li>Automatically run and deliver reports (scheduler, clone)</li>
+						<li>Explore more data from Sierra (collections, circulation, acquisition)</li>
 						<li>Collect non-Sierra data (counter, space usages, research/reference)</li>
 						<li>Data from other APIs (Googlesheet, LibGuides)</li>
 						<li>Plotly's different charts (map, bubble, heatmap) </li>
 					</ul>
-					<aside class="notes">Data is everywhere. We can ask,"Where 
-						our data is located? "What can I do with it?" "How should I present it?"  
+					<aside class="notes">Data is everywhere. 
+						We can ask, "Where is data?" "What can we do with it?" "How should we present it?"
+						<br><br>
+						[Read Slide]  
 					</aside>					
 				</section>
 				<section>
-					<h2>What is the next?</h2>
+					<h2>What is next?</h2>
 					<h3>[ Library Data Group ]</h3>
 					<h3>Seong Heon Lee, selee@chapman.edu</h3>
-					<aside class="notes">"what is the next?" We may create "Library Data Group". This group will explore various 
+					<aside class="notes">"What is next?" We may form "Library Data Group". We can explore various 
 						ways of using library data and create analytic tools. So, if you are interested in, 
 						please send me an email. I think we can grow learning each other.  
 					</aside>	
@@ -512,7 +529,8 @@
 				
 				<section data-transition="slide" data-background="#ff9999" data-background-transition="zoom">
 					<h1>THANK YOU.</h1>
-					<aside class="notes">My daughter said that the last slide is very important. It must be pretty and meaningful. 
+					<aside class="notes">My daughter said that the last slide is very important. 
+						It must be pretty and meaningful. 
 						Here we go. THANK YOU.
 					</aside>	
 				</section>
