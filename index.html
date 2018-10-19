@@ -81,7 +81,7 @@
 					<br>
 				</section>
 				<section>
-					<h3>Why (1)</h3>
+					<h3>Why?</h3>
 					<p><span class="fragment highlight-green" data-fragment-index="1">Sierra has Web Management Reports</span></p>
 					<ul>
 						<li>How many of you are using WMR?</li>
@@ -106,7 +106,7 @@
 					</aside>
 				</section>
 				<section>
-					<h3>Why (2)?</h3>
+					<h3>Why? (continued)</h3>
 					<p><span class="fragment highlight-green" data-fragment-index="1">Who uses what?</span></p>
 					<ul>
 						<li>Compare resource usages by libraries</li>
@@ -134,7 +134,7 @@
 					<br>
 				</section>
 				<section>
-					<h3>Why (3)?</h3>
+					<h3>Why? (continued)</h3>
 					<p><span class="fragment highlight-green" data-fragment-index="1">Why not?</span></p>
 					<ul>
 						<li>Plenty of data visualization tools (Open Source)</li>
@@ -209,7 +209,7 @@
 								<li>Import data: File Upload, URL Link, SQL DB Connector</li>
 								<li>Select a chart type (bar/pie/scatter) and attibutes (X, Y axes)</li>
 								<li>Adjust chart styles</li>
-								<li>multiple traces in scatter plot 
+								<li>Multiple traces in scatter plot 
 									<a href="https://raw.githubusercontent.com/kvslee/sciug2017/master/circ_trans.csv" target="_blank"> (data)</a>
 								</li>
 						</ol>
@@ -226,17 +226,17 @@
 					</aside>
 				</section>															
 				<section>
-					<h3>Plotly Offline (1)</h3>
+					<h3>Plotly Offline </h3>
 					<ul>
 						
 						<li><a href="https://plot.ly/python/" target="_blank">Python Library</a></li>
 						<li><a href="https://plot.ly/python/getting-started/#initialization-for-offline-plotting" target="_blank">Plotly Offline Setup & Syntax</a></li>
 						<ol>
-								<li>import plotly library and chart objects</li>
+								<li>Import plotly library and chart objects</li>
 								<li>Use offline plot function</li>
-								<li>feed data</li>
-								<li>decorate layout</li>
-								<li>pass optional arguments (filename, show_link)</li>
+								<li>Feed data</li>
+								<li>Decorate layout</li>
+								<li>Pass optional arguments (filename, show_link)</li>
 								<li>Interactive dipslay modeBar</li>
 						</ol>
 					</ul>
@@ -251,12 +251,12 @@
 						</aside>					
 				</section>
 				<section>
-					<h3>Plotly Offline (2)</h3>
+					<h3>Plotly Offline (continued)</h3>
 					<p><span class="fragment highlight-green" data-fragment-index="1">How to embed charts in a html?</span></p>
 					<ul>
 						<li>Follow the same rules</li>
 						<li>Use div for output_type, instead of filename </li>
-						<li>Hole a chart in a variable</li>
+						<li>Hold a chart in a variable</li>
 						<li>Pass the variable to a template (Jinja2 engine)
 						<li>A template file will receive multiple chart variables</li>
 					</ul>
@@ -267,7 +267,7 @@
 						 </aside>					
 				</section>				
 				<section>
-					<h3>Plotly Offline (3)</h3>
+					<h3>Plotly Offline (continued)</h3>
 					<img src="images/offline_template.png">
 					<aside class="notes">Plotly outputs a chart (bar_chart, pie_chart) as div. 
 						We hold the charts in variables, which will be feeded 
@@ -287,7 +287,7 @@
 						<ul>
 							<li>plotly.offline.plot() function</li>
 							<li>output_type='div'</li>							
-							<li>Template engine (Jinja2) and a template html</li>
+							<li>template engine (Jinja2) and a template html</li>
 						</ul>
 					</ul>
 					<aside class="notes">Now, we covered most basics of Plotly Online and Offline.
@@ -438,7 +438,7 @@
 					<ul>
 						<li>Use the same SQL output from circ_trans</li>
 						<li>Run data transformations on each column</li>
-						<li>Pltoly option: output_type='div'</li>
+						<li>Plotly option: output_type='div'</li>
 						<li>Pass chart outputs to the template engine</li>
 						<li>Multiple charts will be embedded as instructed in a template file</li>
 					</ul>
