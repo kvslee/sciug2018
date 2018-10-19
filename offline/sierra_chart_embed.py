@@ -54,19 +54,19 @@ def chart_data(work_list, key):
 # circulation by patron home library
 home_libraries = chart_data(circ_trans, 'patron_home_library_code')
 
-# circulation by location
+# circulation by transaction type
 trans_types = chart_data(circ_trans, 'op_code') 
 
 # circluation by patron types
 ptype = chart_data(circ_trans, 'ptype_code')
 
-# circulation by location
+# circulation by item location
 item_location = chart_data(circ_trans, 'item_location_code')
 
-# circulation by location
+# circulation by item type
 itype = chart_data(circ_trans, 'itype_code_num')
 
-# circulation by location
+# circulation by time
 time_data = chart_data(circ_trans, 'time')
 
 print("home libraryies", home_libraries)

@@ -33,7 +33,7 @@
 						<small>Hugh & Hazel Darling Law Library, Chapman University </small>
 					</p>
 					<aside class="notes">
-				        Welcome everyone. Hi, my name is SeongHeon. I am a systems & technology librarian at Chapman University Law Library. 
+				        Welcome everyone. Hi, my name is Seong Heon. I am a systems & technology librarian at Chapman University Law Library. 
 						First of all, thank you all for joining this session. 
 						<br><br>Today, I will share about Sirera SQL API and Plotly. 
 				    </aside>					
@@ -59,10 +59,10 @@
 						<li>Technology / marketing ideas and the library</li>
 					</ul>
 					<aside class="notes">
-						When SCIUG requsted presentation proposals with a list of interests. 
+						When SCIUG requsted presentation proposals, they sent out a list of interests. 
 						(CLICK)
 						I find that there are some interests in SQL report-writing, Sierra APIs, and Stats and other ways of reporting.
-						I think that I can cover those interests in one presentation.  
+						I think that I can cover those interests in this presentation.  
 					</aside>
 					<br>
 				</section>
@@ -90,16 +90,16 @@
 					</ul>
 					<aside class="notes">
 						My first question is this. Why do we need a custom report program? (CLICK) As you know, Sierra provides 
-						with a build-in report prgoram, called Web Management Reports (WMR). How many of you are using WMR? 
+						with a built-in report prgoram, called Web Management Reports (WMR). How many of you are using WMR? 
 						What is your user exprience? Personally, I do not have many words to say about it, 
 						because I have not used it much. Preparing this presentation, I revisited the report program to make 
 						a quick evaluation. My first impression is that it has not been improved for a long time. 
 						UI is old and not intuitive. 
 						<br><br>
 						I know that Innovative has a new data analytic product, Decision Center. Again, I have no word to say about Decision Center, 
-						because I have no exprience of the product. But I am not sure how many libraries are affordable to purchase 
+						because I have no experience of the product. But I am not sure how many libraries are affordable to purchase 
 						the product, particularly a library running a small or medium size of colletion.
-						Would it be valuable enough for the money we invest? The answer may be "yes" for some libraries, or 'not' for others.
+						Would it be valuable enough for the money we invest? The answer may be "yes" for some libraries, or 'no' for others.
 						<br><br>
 						I think that Sierra APIs (SQL Direct, REST) are great tools to leverage the gap. A custom report program, which
 						is built with the APIs, can provide a good solution for data analytics.
@@ -155,7 +155,7 @@
 						They outreach more developers and users.
 						<br><br>
 						We are creative beings. We like to customize reports as we wish. Data matters. But 
-						data presentaiton also matters. We all have expriences in tweaking an excel file to create 
+						data presentaiton also matters. We all have experiences in tweaking an excel file to create 
 						a nice report. We can do the same with using APIs and visualization tools.   
 					</aside>
 					<br>
@@ -171,7 +171,7 @@
 					<ol>
 						<li>Plotly (Online & Offline)</li>
 						<li>Sierra SQL API</li>
-						<li>Examples (Sierra & Plotly)</li>
+						<li>Actual Reports (Sierra & Plotly Offline)</li>
 						<li>Web App (Sierra & Plotly)</li>
 					</ol>
 					<aside class="notes">Now let's move on to the real part of presentation. 
@@ -179,7 +179,7 @@
 						We will start with Plotly library. We will learn how to create a chart online and offline.
 						Next, we will go through how to connect Sierra SQL API and get data from Sierra Database.
 						After that, combining the knowledge of both Plotly and Sierra SQL API, we will create 
-						actual reports with Sierra and Plotly. Finally, I will show a sample web app. 
+						actual reports with Sierra and Plotly Offline. Finally, I will show a sample web app. 
 					</aside>
 					<br>
 				</section>					
@@ -245,7 +245,7 @@
 						<br><br>
 					Python Library pages show examples and documentation (Full Reference). 
 					<br><br>
-					Before creating an offfline chart, Let's see  how to setup offline plotting.
+					Before creating an offline chart, Let's see  how to setup offline plotting.
 					[Code - first.py]
 
 						</aside>					
@@ -301,8 +301,8 @@
 					<h3>Sierra SQL API</h3>
 					<ul> 
 						<li>PostgreSQL relational database</li>
-						<li>Sierra_view schema & 349 tables (read only)</li>
-						<li>User permisson to "Sierra SQL Access" required</li>
+						<li>Sierra_view schema & 348 tables (read only)</li>
+						<li>User permission to "Sierra SQL Access" required</li>
 						<li>Access to: 
 							<ul>
 								<li>bibliographic data (bib, item, holding)</li>
@@ -348,7 +348,7 @@
 					<aside class="notes">
 						I just explained how to connect to Sierra Database. Now we need to learn database structure.
 						<br><br>
-						PGAdmin displays all 349 viewable tables (under sierra_view schema). To get familiar,
+						PGAdmin displays all 348 viewable tables (under sierra_view schema). To get familiar,
 						you need to spend some times. You may browse through all tables in PGAdmin. 
 						However, often times, some tables or fields are not obvious to understand.
 						<br><br>Then, you can go to 
@@ -358,7 +358,9 @@
 						It includes detailed descriptions on tables and fields. 
 						To find a table, you can follow category or use the search box on the top right. 
 						SierraDNA shows not only detailed table view but also Entity Relationship
-						Diagram. ERD is useful to create a join querr because it visualizes relationships among tables.   
+						Diagram. ERD is useful to create a join query because it visualizes relationships among tables.
+						<br><br>
+						For example, let's take a look at checkout table.    
 					</aside>					
 				</section>
 				<section>
@@ -407,7 +409,7 @@
 						<br><br>
 						Afte we receive data from Sirera, we need to manipuate the data into a right format that Plotly requires. 
 						<br><br>
-						[code sierra_chart.py] 
+						[code sierra_chart.py] <br>
 						[Explain the code and run]
    
 					</aside>					
@@ -514,7 +516,8 @@
 					<aside class="notes">Data is everywhere. 
 						We can ask, "Where is data?" "What can we do with it?" "How should we present it?"
 						<br><br>
-						[Read Slide]  
+						[Read Slide]  <br>
+						[Web App Demo]
 					</aside>					
 				</section>
 				<section>
